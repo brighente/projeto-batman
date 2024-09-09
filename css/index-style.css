@@ -14,42 +14,6 @@
     text-decoration: none;
 }
 
-header{
-    height: 90px;
-    width: 100%;
-    margin: auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-nav{
-    width: 35%;
-}
-
-ul{
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-}
-
-li{
-    list-style: none;
-    color: aliceblue;
-    cursor: pointer;
-    transition: .5s;
-    font-family: var(--fonte01);
-}
-
-li:hover{
-    color: #d21617;
-}
-
-#logo{
-    width: 200px;
-    height: 90px;
-}
-
 #banner{
     background-image: url('https://i.redd.it/6092ltrt8nt71.jpg');
     background-position: bottom center;
@@ -164,39 +128,9 @@ li:hover{
     background-image: url('https://t.ctcdn.com.br/zi1akcdhKrVr4dlZ7IY3ZBbkFxg=/640x360/smart/i360687.jpeg');
 }
 
-footer{
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
-}
 
-footer > img{
-    object-fit: contain;
-}
-
-span{
-    color: grey;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.footer-nav{
-    display: none;
-}
-
-.footer-list{
-    margin-bottom: 15px;
-    display: flex;
-    justify-content: center;
-    column-gap: 20px;
-}
-
-@media(max-width: 769px){
-    nav{
-        display: none;
-    }
+@media(max-width: 768px){
 
     #banner{
         height: 200px;
@@ -244,10 +178,6 @@ span{
     .cards-content{
         grid-template-columns: 1fr;
         margin-top: 150px;
-    }
-
-    .footer-nav{
-        display: block;
     }
 }
 
