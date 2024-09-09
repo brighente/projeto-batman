@@ -52,10 +52,11 @@ li:hover{
 
 #banner{
     background-image: url('https://i.redd.it/6092ltrt8nt71.jpg');
-    background-position: center center;
+    background-position: bottom center;
     background-size: cover;
     width: 100%;
     height: 600px;
+    box-shadow: inset 0px 0px 8px 4px rgba(0, 0, 0, 0.384);
 }
 
 #trailer-container{
@@ -113,4 +114,160 @@ li:hover{
 .button:hover{
     background-color: aliceblue;
     color: black;
+}
+
+.cards-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cards-content{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 40px;
+    row-gap: 20px;
+}
+
+.card{
+    width: 100%;
+    height: 600px;
+    background-position: top center;
+    background-size: cover;
+    border-radius: 5px;
+    transition: 1s;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: aliceblue;
+    font-family: var(--fonte01);
+    font-size: 1.2em;
+    padding: 0px 0px 10px 10px;
+}
+
+.card:hover{
+    transform: scale(1.02);
+}
+
+.banner-1{
+    background-image: url('https://img.odcdn.com.br/cdn-cgi/image/width=960,height=1200,fit=cover/wp-content/uploads/2022/01/The-Batman.jpg');
+}
+
+.banner-2{
+    background-image: url('https://www.comboinfinito.com.br/principal/wp-content/uploads/2021/12/zoe-kravitz-mulher-gato-2.jpg');
+}
+
+.banner-3{
+    background-image: url('https://t.ctcdn.com.br/zi1akcdhKrVr4dlZ7IY3ZBbkFxg=/640x360/smart/i360687.jpeg');
+}
+
+footer{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer > img{
+    object-fit: contain;
+}
+
+span{
+    color: grey;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.footer-nav{
+    display: none;
+}
+
+.footer-list{
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+@media(max-width: 769px){
+    nav{
+        display: none;
+    }
+
+    #banner{
+        height: 200px;
+        background-position: 40%;
+    }
+
+    #trailer-content{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trailer{
+        width: 100%;
+    }
+
+    #sinopse{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .description{
+        width: 100%;
+    }
+
+    .button{
+        width: 50%;
+        margin-top: 30px;
+    }
+
+    .cards-container{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards-content{
+        grid-template-columns: 1fr;
+        margin-top: 150px;
+    }
+
+    .footer-nav{
+        display: block;
+    }
+}
+
+@media(max-width: 1233px){
+    #banner{
+        background-position: 70%;
+    }
+
+    #trailer-content{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content{
+        width: 95%;
+    }
+    
+    #sinopse{
+        font-size: 1.1em;
+    }
 }
