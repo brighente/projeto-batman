@@ -24,13 +24,42 @@
             </header>
         </header>
         <main>
-            <h1>Nos mande um Bat-Sinal!</h1>
-            <form action="">
-                <input type="text" name="name" id="name" placeholder="Nome:">
-                <input type="email" name="email" id="email" placeholder="Email:">
-                <textarea name="message" id="message" rows="10" placeholder="Sua Bat-Mensagem: "></textarea>
-            </form>
+            <article>
+                <form action="" method="post" id="formulario">
+                    <section id="primeira-parte">
+                        <h1>Nos mande um Bat-Sinal!</h1>
+                        <section id>
+                            <label for="name">Nome:</label>
+                            <input type="text" name="name" id="name" placeholder="Robert Pattison" class="input">
+                            <hr>
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email" placeholder="robert123@gmail.com" class="input"><hr>
+                        </section>
+                    </section>
+                    <section id="segunda-parte">
+                        <textarea name="message" id="message" rows="10" placeholder="Sua Bat-Mensagem: "></textarea class="input">
+                        <button form="formulario" type="submit" class="button">Enviar!</button>
+                    </section>
+                </form>
+            </article>
         </main>
-        <footer></footer>
+        <footer>
+            <img src="./media/batman-logo.png" id="logo">
+            <nav class="footer-nav">
+                <ul class="footer-list">
+                    <a href="./index.html"><li>Home</li></a>
+                    <a href="./contato.html"><li>Contato</li></a>
+                    <a href="./fotos.html"><li>Fotos</li></a>
+                    <a href="./comentarios.html"><li>Comentários</li></a>
+                </ul>
+            </nav>
+            <span>&copy; João Brighente</span>
+            <span>Todos os direitos reservados</span>
+            <span>
+                <a href="https://github.com/brighente" target="_blank" class="links"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/joaovitorbrighente/" target="_blank" class="links"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/joao.souzaa06/" target="_blank" class="links"><i class="fa-brands fa-instagram"></i></a>
+            </span>
+        </footer>
     </body>
 </html>

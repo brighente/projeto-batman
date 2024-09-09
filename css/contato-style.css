@@ -4,6 +4,10 @@
 
 :root{
     --fonte01: 'Kdam Thmor Pro';
+
+    --cor00: #000000;
+    --cor01: #f0f8ff;
+    --cor02: #d21617;
 }
 
 *{
@@ -12,11 +16,78 @@
     background-color: rgb(0, 0, 0);
     list-style: none;
     text-decoration: none;
+    color: var(--cor01);
 }
 
+main{
+    padding: 10px;
+    width: 90%;
+    height: 550px;
+    background-color: var(--cor01);
+    margin: auto;
+    box-shadow: inset 0px 0px 8px 4px rgba(0, 0, 0, 0.205);
+}
+
+article{
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+}
 
 form{
+    padding: 10px 0px 0px 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    justify-content: center;
+}
+
+section{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    justify-content: space-evenly;
 }
+
+.input, textarea{
+    border: 0px;
+}
+
+textarea{
+    border-left: 1px solid grey;
+    resize: none;
+    padding: 10px;
+}
+
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+hr{
+    width: 90%;
+}
+
+.button{
+    background-color: var(--cor02);
+    border: 0px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#primeira-parte{
+    font-size: 1.3em;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#primeira-parte h1{
+    font-size: 2em;
+    color: var(--cor01);
+    margin-bottom: 20px;
+}
+
+#segunda-partev {
+    font-size: 1.3em;
+    
+}
+

@@ -4,12 +4,16 @@
 
 :root{
     --fonte01: 'Kdam Thmor Pro';
+
+    --cor00: black;
+    --cor01: aliceblue;
+    --cor02: #d21617;
 }
 
 *{
     margin: 0px;
     padding: 0px;
-    background-color: black;
+    background-color: var(--cor00);
     list-style: none;
     text-decoration: none;
 }
@@ -53,14 +57,14 @@
 
 .description{
     width: 70%;
-    color: aliceblue;
+    color: var(--cor01);
 }
 
 .button{
     width: 200px;
     height: 60px;
-    color: aliceblue;
-    background-color: #d21617;
+    color: var(--cor01);
+    background-color: var(--cor02);
     font-weight: bold;
     font-size: 16px;
     margin-top: 20px;
@@ -76,8 +80,8 @@
 }
 
 .button:hover{
-    background-color: aliceblue;
-    color: black;
+    background-color: var(--cor01);
+    color: var(--cor00);
 }
 
 .cards-container{
@@ -106,7 +110,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    color: aliceblue;
+    color: var(--cor01);
     font-family: var(--fonte01);
     font-size: 1.2em;
     padding: 0px 0px 10px 10px;
