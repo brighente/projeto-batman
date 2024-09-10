@@ -16,36 +16,60 @@
     background-color: rgb(0, 0, 0);
     list-style: none;
     text-decoration: none;
-    color: var(--cor01);
 }
 
 main{
-    padding: 10px;
+    padding: 25px 25px 15px 15px;
     width: 90%;
-    height: 550px;
-    background-color: var(--cor01);
+    min-width: 375px;
+    height: 800px;
+    background-color: var(--cor00);
     margin: auto;
     box-shadow: inset 0px 0px 8px 4px rgba(0, 0, 0, 0.205);
 }
 
 article{
+    width: 100%;
     position: relative;
-    top: 50%;
-    transform: translate(0,-50%);
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 form{
-    padding: 10px 0px 0px 10px;
+    width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: auto;
+    grid-template-columns: 1.2fr 0.8fr;
     justify-content: center;
+    padding-left: 10px;
+    padding-top: 10px;
+    background-color: var(--cor01);
 }
 
 section{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    background-color: var(--cor01);
+}
+
+#primeira-parte{
+    font-size: 1.2em;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#primeira-parte h1{
+    font-size: 1.7em;
+    margin-bottom: 20px;
+}
+
+#segunda-parte {
+    width: 100%;
+}
+
+input, label, textarea, h1{
+    background-color: var(--cor01);
 }
 
 .input, textarea{
@@ -55,16 +79,17 @@ section{
 textarea{
     border-left: 1px solid grey;
     resize: none;
-    padding: 10px;
+    padding: 5px;
 }
 
-textarea:focus, input:focus, select:focus {
+textarea:focus, input:focus{
     box-shadow: 0 0 0 0;
     outline: 0;
 }
 
 hr{
     width: 90%;
+    margin-bottom: 15px;
 }
 
 .button{
@@ -72,22 +97,25 @@ hr{
     border: 0px;
     height: 30px;
     cursor: pointer;
+    font-weight: bold;
 }
 
-#primeira-parte{
-    font-size: 1.3em;
-    margin-top: 20px;
-    margin-bottom: 40px;
+#comentarios{
+    position: absolute;
 }
 
-#primeira-parte h1{
-    font-size: 2em;
-    color: var(--cor01);
-    margin-bottom: 20px;
+.comentarios-container{
+    display: flex;
+    flex-direction: column;
 }
 
-#segunda-partev {
-    font-size: 1.3em;
-    
+.fotos{
+    height: 300px;
+    width: 250px;
 }
 
+#comment2{
+    margin-top: -35px;
+    display: flex;
+    flex-direction: row-reverse;
+}
