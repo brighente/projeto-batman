@@ -6,14 +6,6 @@
     --fonte01: 'Kdam Thmor Pro';
 }
 
-*{
-    margin: 0px;
-    padding: 0px;
-    background-color: black;
-    list-style: none;
-    text-decoration: none;
-}
-
 header{
     height: 90px;
     width: 100%;
@@ -83,7 +75,6 @@ span{
     margin-bottom: 15px;
     display: flex;
     justify-content: center;
-    column-gap: 10px;
 }
 
 @media(max-width: 768px){

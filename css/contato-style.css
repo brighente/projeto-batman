@@ -2,120 +2,136 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
 
+@font-face {
+    font-family: 'Batman';
+    src: url('../media/batmfa__.ttf') format('truetype');
+}
+
 :root{
     --fonte01: 'Kdam Thmor Pro';
+    --fonte02: 'Batman';
 
     --cor00: #000000;
     --cor01: #f0f8ff;
     --cor02: #d21617;
+    --cor03: #fff;
 }
 
 *{
     margin: 0px;
     padding: 0px;
-    background-color: rgb(0, 0, 0);
     list-style: none;
     text-decoration: none;
 }
 
-main{
-    padding: 25px 25px 15px 15px;
-    width: 90%;
-    min-width: 375px;
-    height: 800px;
+body{
     background-color: var(--cor00);
+}
+
+main{
+    background-color: var(--cor03);
+    width: 95%;
+    min-width: 355px;
     margin: auto;
-    box-shadow: inset 0px 0px 8px 4px rgba(0, 0, 0, 0.205);
+    padding: 10px;
+    box-shadow: inset 0px 0px 8px 4px rgba(0, 0, 0, 0.384);
+}
+
+h1.title{
+    text-align: center;
+    font-size: 2em;
+    font-family: var(--fonte02);
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.26);
 }
 
 article{
     width: 100%;
-    position: relative;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%,-50%);
 }
 
 form{
+    font-family: var(--fonte01);
+    margin-top: 30px;
     width: 100%;
     display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
-    justify-content: center;
-    padding-left: 10px;
-    padding-top: 10px;
-    background-color: var(--cor01);
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid rgba(0, 0, 0, 0.411);
 }
 
-section{
+#message{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: var(--cor01);
 }
 
-#primeira-parte{
-    font-size: 1.2em;
-    margin-top: 10px;
-    margin-bottom: 30px;
+form h1{
+    font-size: 1.5em;
+    margin-bottom: 15px;
 }
 
-#primeira-parte h1{
-    font-size: 1.7em;
-    margin-bottom: 20px;
+form hr{
+    width: 90%;
 }
 
-#segunda-parte {
+.button{
     width: 100%;
+    border: none;
+    background-color: var(--cor02);
+    font-family: var(--fonte02);
+    font-weight: bold;
+    height: 25px;
+    cursor: pointer;
+    transition: 1s;
 }
 
-input, label, textarea, h1{
-    background-color: var(--cor01);
+textarea, input{
+    font-family: var(--fonte01);
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
 }
 
-.input, textarea{
+textarea:focus, input:focus{
     border: 0px;
 }
 
 textarea{
-    border-left: 1px solid grey;
+    border-left: 1px solid gray;
     resize: none;
-    padding: 5px;
-}
-
-textarea:focus, input:focus{
-    box-shadow: 0 0 0 0;
-    outline: 0;
-}
-
-hr{
-    width: 90%;
-    margin-bottom: 15px;
-}
-
-.button{
-    background-color: var(--cor02);
-    border: 0px;
-    height: 30px;
-    cursor: pointer;
-    font-weight: bold;
 }
 
 #comentarios{
-    position: absolute;
+    display: grid;
+    row-gap: 30px;
 }
 
-.comentarios-container{
+.comment-right{
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+}
+
+.comment-right p{
+    margin-left: 15px;
+}
+
+.comment-left{
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: end;
+}
+
+.comment-left p{
+    margin-right: 15px;
+}
+
+p{
+    width: 50%;
+    font-family: var(--fonte01);
+    font-size: 0.9em;
 }
 
 .fotos{
-    height: 300px;
-    width: 250px;
-}
-
-#comment2{
-    margin-top: -35px;
-    display: flex;
-    flex-direction: row-reverse;
+    height: 250px;
+    width: 200px;
 }
