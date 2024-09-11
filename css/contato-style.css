@@ -57,6 +57,7 @@ form{
     display: grid;
     grid-template-columns: 1fr 1fr;
     border: 1px solid rgba(0, 0, 0, 0.411);
+    box-shadow: 2px 2px 7px 0px rgba(0, 0, 0, 0.205);
 }
 
 form h1{
@@ -111,22 +112,22 @@ textarea{
     row-gap: 30px;
 }
 
-.comment-right{
+.comment1, .comment3{
     display: flex;
     justify-content: space-between;
 }
 
-.comment-right p{
+.comment1 p, .comment3 p{
     margin-left: 15px;
 }
 
-.comment-left{
+.comment2{
     display: flex;
     flex-direction: row-reverse;
     text-align: end;
 }
 
-.comment-left p{
+.comment2 p{
     margin-right: 15px;
 }
 
@@ -139,6 +140,7 @@ p{
 .fotos{
     height: 250px;
     width: 200px;
+    box-shadow: 2px 2px 7px 0px rgba(0, 0, 0, 0.205);
 }
 
 @media (min-width: 768px){
@@ -173,29 +175,41 @@ p{
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .comment-right{
+    .comment1{
         display: flex;
         flex-direction: column;
-        justify-content: center;
         text-align: justify;
     }
 
-    .comment-right p{
+    .comment1 p{
         position: relative;
         left: 50%;
         transform: translate(-60%);
     }
 
-    .comment-left{
+    .comment2{
         display: flex;
         flex-direction: column;
         text-align: justify;
     }
 
-    .comment-left p{
+    .comment2 p{
         position: relative;
         left: 50%;
         transform: translate(-50%);
+    }
+
+    .comment3{
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+        justify-content: space-evenly;
+    }
+
+    .comment3 p{
+        position: relative;
+        left: 50%;
+        transform: translate(-60%);
     }
 
     .fotos{
@@ -204,4 +218,15 @@ p{
         left: 50%;
         transform: translate(-50%);
     }
+}
+
+@media (min-width: 1024px){
+    main{
+        width: 70%;
+    }
+    
+    form{
+        width: 50%;
+    }
+    
 }
