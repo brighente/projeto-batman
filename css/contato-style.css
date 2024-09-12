@@ -29,7 +29,7 @@ body{
 }
 
 main{
-    background-color: var(--cor03);
+    background-color: var(--cor00);
     width: 95%;
     min-width: 355px;
     margin: auto;
@@ -38,6 +38,7 @@ main{
 }
 
 h1.title{
+    color: var(--cor01);
     text-align: center;
     font-size: 2em;
     font-family: var(--fonte02);
@@ -46,17 +47,18 @@ h1.title{
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.26);
 }
 
-article{
+#forms{
     width: 100%;
 }
 
 form{
     font-family: var(--fonte01);
+    color: var(--cor01);
     margin-top: 30px;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border: 1px solid rgba(0, 0, 0, 0.411);
+    border: 1px solid rgb(255, 255, 255);
     box-shadow: 2px 2px 7px 0px rgba(0, 0, 0, 0.205);
 }
 
@@ -82,6 +84,8 @@ input{
 
 textarea, input{
     font-family: var(--fonte01);
+    background-color: var(--cor00);
+    color: var(--cor01);
     box-shadow: 0 0 0 0;
     border: 0 none;
     outline: 0;
@@ -92,11 +96,12 @@ textarea:focus, input:focus{
 }
 
 textarea{
-    border-left: 1px solid gray;
+    border-left: 1px solid rgb(255, 255, 255);
     resize: none;
 }
 
 .button{
+    color: var(--cor01);
     width: 100%;
     border: none;
     background-color: var(--cor02);
@@ -110,6 +115,7 @@ textarea{
 #comentarios{
     display: grid;
     row-gap: 30px;
+    color: var(--cor01);
 }
 
 .comment1, .comment3{
@@ -204,6 +210,7 @@ p{
         flex-direction: column;
         text-align: justify;
         justify-content: space-evenly;
+        transform: translate(0%,-4%);
     }
 
     .comment3 p{
@@ -222,11 +229,18 @@ p{
 
 @media (min-width: 1024px){
     main{
-        width: 70%;
-    }
-    
-    form{
         width: 50%;
     }
     
+    form{
+        width: 90%;
+    }
+
+    .comment1 p, .comment2 p, .comment3 p{
+        font-size: 1em;
+    }
+
+    .comment3{
+        transform: translate(0%,-4%);
+    }
 }
